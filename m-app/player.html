@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Banshee Music App</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+
+    
+
+
+    <div class="player-container">
+        <img src="assets/images/album-cover.jpg" alt="Album Cover">
+        <h2>Song Title</h2>
+        <p>Artist Name</p>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="total-time">3:45</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prev">&laquo;</button>
+            <button class="play-pause" id="play-pause">Play</button>
+            <button id="next">&raquo;</button>
+        </div>
+        <div class="volume-container">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        <div class="quality-container">
+            <label for="quality">Quality</label>
+            <select id="quality" name="quality">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <!-- Add the audio element -->
+        <audio id="audio" src="mp3/Construyendo en el Espacio - Luna Cantina.mp3"></audio>
+        <a href="index.html">Home</a>
+    </div>
+
+   
+    <script src="player.js"></script>
+</body>
+</html>

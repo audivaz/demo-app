@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1e;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.player-container {
+    background-color: #2c2c2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.player-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.player-container h2 {
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #007aff;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.controls button:hover {
+    background-color: #005ecb;
+}
+
+.controls button.play-pause {
+    width: 50px;
+    height: 50px;
+}
+
+.progress-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #3c3c3e;
+    border-radius: 5px;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #007aff;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.1s;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.volume-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.volume-container label {
+    margin-right: 10px;
+}
+
+.volume-container input[type="range"] {
+    width: 100%;
+}
+
+.quality-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quality-container label {
+    margin-right: 10px;
+}
+
+.quality-container select {
+    padding: 5px;
+    background-color: #3c3c3e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
