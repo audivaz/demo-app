@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+header {
+    background: rgb(99, 103, 105);
+    background: -webkit-linear-gradient(315deg, hsla(208, 7%, 35%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(208, 7%, 35%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+    background: linear-gradient(315deg, hsla(208, 10%, 35%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#858e96", endColorstr="#2C2C2E", GradientType=1 );
+    padding: 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    letter-spacing: 1.2px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #fff 0%, #2ca6f7 100%);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.menu li a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0%);
+}
+/* END OF NAV BAR  */
+
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown ul li {
+    margin-bottom: 5px;
+}
+
+.dropdown ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    margin: 20px 0;
+    
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    border-bottom: solid 2px white;
+    background: -webkit-linear-gradient(#eee 30%, #2ca6f7 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1 0 45%;
+    background: hsla(208, 7%, 55%, 1);
+
+    background: -webkit-linear-gradient(45deg, hsla(208, 7%, 53%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(208, 7%, 35%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+
+    background: linear-gradient(45deg, hsla(208, 7%, 35%, 1) 0%, hsla(240, 2%, 18%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#858e96", end Colorstr="#2C2C2E", GradientType=1 );
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.item h3 {
+    margin: 10px 0;
+    letter-spacing: 2px;
+    
+}
+
+.item button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #504f4e;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.item button:hover {
+    background: linear-gradient(90deg, rgb(127, 233, 245) 0%, rgb(4, 75, 156) 100%);
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.music-note {
+    width: 55px;
+    height: 55px;
+    border-radius:  0%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.artist-photo {
+    width: 45px;
+    height: 80px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+.artist-mic {
+    width: 50px;
+    height: 65px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+
+
